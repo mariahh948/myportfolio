@@ -25,13 +25,12 @@
 
         .topnav {
             overflow: hidden;
-            background-color: #333;
+            background-color: #1f1f1f;
         }
-
         .topnav a {
             float: left;
             display: block;
-            color: #f2f2f2;
+            color: antiquewhite;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -43,7 +42,7 @@
         }
 
         .content {
-            background-color: #ddd;
+            background-color: #2b2b2b;
             padding: 10px;
             text-align: center;
             flex: 1;
@@ -51,12 +50,25 @@
             justify-content: center;
             align-items: center;
             height: 700px;
+            position: relative;
+        }
+        .hero-text {
+            position: absolute;
+
+            top: 45%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            font-size: 30px;
+            color: black;
         }
 
         .footer {
-            background-color: #f1f1f1;
+            background-color: #1f1f1f;
             padding: 10px;
             text-align: center;
+            color: antiquewhite;
         }
 	</style>
     </head>
@@ -74,15 +86,14 @@
         </div>
 
         <div class="content">
-            <canvas id="contents" width="400" height="500">
-                <div>
-                    <h3>Hello There!</h3>
-                    <h1>I am Mariah Smith.</h1>
-                </div>
+            <canvas id="contents" width="400" height="500"></canvas>
+            
+            <div class="hero-text">
+                <span id="typing"></span>
+            </div>
 
             <!--<h3>Hello There!</h3>
             <h1>I am Mariah Smith.</h1>-->
-            </canvas>
             <!--<h3>Hello There!</h3>
             <h1>I am Mariah Smith.</h1>-->
         </div>
@@ -91,6 +102,17 @@
         <div class="footer">
             <p>Welcome to my portfolio.</p>
         </div>
+
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed("#typing", {
+                strings: ["Hello there!", "I am Mariah Smith.", "Welcome to my portfolio!"],
+                typeSpeed: 75,
+                backSpeed: 40,
+                loop: true
+            });
+        </script>
 
         <script>
             var c = document.getElementById("contents");
@@ -103,10 +125,10 @@
             ctx.fillStyle = grd;
             ctx.fillRect(0, 0, c.width, c.height);
 
-            ctx.font = "30px Arial";
-            ctx.textAlign = "center";
-            ctx.textBaseline = "middle";
-            ctx.strokeText("Hello There!", c.width/2, 230);
+            //ctx.font = "30px Arial";
+            //ctx.textAlign = "center";
+            //ctx.textBaseline = "middle";
+            //ctx.strokeText("Hello There!", c.width/2, 230);
         </script>
 
     </body>
