@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Me</title>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            html, body {
+                height: 100%;
+            }
+            body {
+                background-color: antiquewhite;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            .topnav {
+                background-color: #1f1f1f;
+                display: flex;
+                justify-content: left;
+            }
+            .topnav a {
+                color: antiquewhite;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .topnav a:hover {
+                background-color: antiquewhite;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: antiquewhite;
+                color: #1f1f1f;
+            }
+            .content {
+                flex: 1;
+            }
+            h1 {
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .headshot {
+			    width: 365px;
+                height: 500px;
+                border-radius: 12px;
+			    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+			    transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .summary {
+                display: flex;
+			    align-items: center;
+			    justify-content: center;
+				gap: 40px;
+				margin-top: 40px;
+				flex-wrap: wrap;
+            }
+            .summary p {
+                max-width: 500px;
+				text-align: center;
+
+            }
+            p {
+                font-size: 25px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .footer {
+                background-color: #1f1f1f;
+                padding: 15px;
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="#" class="active">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="content">
+            <h1>Aspiring Game Developer & Software Engineer</h1>
+            <div class="summary">
+                <img src="headshot.jpg" alt="Professional Headshot" class="headshot" width="365px" height="500px">
+
+                <p>
+                    I am a computer science graduate passionate about game development and building interactive experiences. I developed a VR escape room project from scratch in Unity alongside a team and continue growing my skills in C# and Python through personal projects and hands-on learning. I enjoy learning new technologies, solving problems, and turning ideas into functional applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer"></div>
+    </body>
+</html>
