@@ -36,7 +36,46 @@
                 background-color: antiquewhite;
                 color: #1f1f1f;
             }
+            .clouds {
+                position: relative;
+                width: 500px;
+                height: 500px;
+            }
+
+            .cloud1 {
+                position: absolute;
+                left: 15px;
+                top: 0px;
+            }
+
+            .cloud2 {
+                position: absolute;
+                left: 365px;
+                top: 0px;
+            }
+
+            .cloud3 {
+                position: absolute;
+                left: 365px;
+                top: 300px;
+            }
+
+            .cloud4 {
+                position: absolute;
+                left: 0px;
+                top: 300px;
+            }
+
+            .cloud1decor {
+                position: absolute;
+                inset: 0;
+                align-items: center;
+                font-size: 16px;
+                font-weight: bold;
+            }
         </style>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     </head>
 
@@ -49,8 +88,24 @@
             <a href="contact.html">Contact</a>
         </div>
 
-        <div>
-            
+        <div class="clouds"> 
+            <div class="cloud1">
+                <i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
+                <div class="cloud1decor">
+                    <h3>Programming Languages</h3>
+                    <hr>
+
+                </div>
+            </div>
+            <div class="cloud2">
+                <i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
+            </div>
+            <div class="cloud3">
+                <i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
+            </div>
+            <div class="cloud4">
+                <i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
+            </div>
         </div>
 
         <div class="footer"></div>
