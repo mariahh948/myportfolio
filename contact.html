@@ -1,58 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Contact</title>
-        <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Contact</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-            html, body {
-                height: 100%;
-            }
-            body {
-                background-color: antiquewhite;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-            }
-            .topnav {
+            <style>
+                html, body {
+                    height: 100%;
+                }
+                body {
+                    background-color: antiquewhite;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .topnav {
+                    background-color: #1f1f1f;
+                    display: flex;
+                    justify-content: left;
+                }
+                .topnav a {
+                    color: antiquewhite;
+                    text-align: center;
+                    padding: 20px 22px;
+                    text-decoration: none;
+                }
+
+                .topnav a:hover {
+                    background-color: antiquewhite;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: antiquewhite;
+                    color: #1f1f1f;
+                }
+
+                .icons {
+                    position: relative;
+                    flex: 1;
+                    align-items: center;
+                }
+
+                .email {
+                    position: absolute;
+                    left: 200px;
+                    top: 100px;
+                }
+
+                .emailtext {
+                    position: absolute;
+                    left: 255px;
+                    top: 95px;
+                    font-size: 20px;
+                }
+
+                .github {
+                    position: absolute;
+                    left: 200px;
+                    top: 200px;
+                }
+
+                .githubtext {
+                    position: absolute;
+                    left: 260px;
+                    top: 195px;
+                    font-size: 20px;
+                }
+
+                .linkedin {
+                    position: absolute;
+                    left: 200px;
+                    top: 300px;
+                }
+
+                .linkedintext {
+                    position: absolute;
+                    left: 260px;
+                    top: 295px;
+                    font-size: 20px;
+                }
+
+                .discord {
+                    position: absolute;
+                    left: 200px;
+                    top: 400px;
+                }
+
+                .discordtext {
+                    position: absolute;
+                    left: 260px;
+                    top: 395px;
+                    font-size: 20px;
+                    text-decoration: underline;
+                    color:blue;
+                }
+
+                .discordtext:hover {
+                    color: hotpink;
+                }
+
+                .a {
+                    position: absolute;
+                }
+
+                .links1:link {
+                    color:blue;
+                }
+                .links1:visited {
+                    color:darkblue;
+                }
+                .links1:hover {
+                    color:hotpink;
+                }
+                .links1:active {
+                    color:cyan;
+                }
+
+                .links2:link {
+                    color:blue;
+                }
+                .links2:visited {
+                    color:darkblue;
+                }
+                .links2:hover {
+                    color:hotpink;
+                }
+                .links2:active {
+                    color:cyan;
+                }
+
+                .links3:link {
+                    color:blue;
+                }
+                .links3:visited {
+                    color:darkblue;
+                }
+                .links3:hover {
+                    color:hotpink;
+                }
+                .links3:active {
+                    color:cyan;
+                }
+
+                .thanks {
+                    position: absolute;
+                    text-align: center;
+                    left: 200px;
+                    top: 595px;
+                    font-size: 25px;
+                }
+
+                .footer {
                 background-color: #1f1f1f;
-                display: flex;
-                justify-content: left;
-            }
-            .topnav a {
-                color: antiquewhite;
-                text-align: center;
-                padding: 20px 22px;
-                text-decoration: none;
+                padding: 15px;
             }
 
-            .topnav a:hover {
-                background-color: antiquewhite;
-                color: black;
-            }
+            </style>
 
-            .topnav a.active {
-                background-color: antiquewhite;
-                color: #1f1f1f;
-            }
-        </style>
+        </head>
 
-    </head>
+        <body>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="#" class="active">Contact</a>
+            </div>
 
-    <body>
-        <div class="topnav">
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="#" class="active">Contact</a>
-        </div>
+            <div class="icons">
+                <div class="email">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" width="50" height="50">
+                </div>
+                <div class="emailtext">
+                    <p>: <a class="links1" href="mailto:mariahgs9488@gmail.com">mariahgs9488@gmail.com</a></p>
+                </div>
 
-        <div>
-            
-        </div>
+                <div class="github">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="55" height="55">
+                </div>
+                <div class="githubtext">
+                    <p>: <a class="links2" href="https://github.com/mariahh948">mariahh948</a></p>
+                </div>
 
-        <div class="footer"></div>
-    </body>
-</html>
+                <div class="linkedin">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" width="50" height="50">
+                </div>
+                <div class="linkedintext">
+                    <p>: <a class="links3" href="www.linkedin.com/in/mariah-smith-a9414b2b5">Mariah Smith</a></p>
+                </div>
+
+                <div class="discord">
+                    <img src="https://pngimg.com/uploads/discord/discord_PNG8.png" width="50" height="50">
+                </div>
+                <div class="discordtext">
+                    <p>: mariah048888 | 1230870657362038868</a></p>
+                </div>
+            </div>
+
+            <div class="thanks">
+                <p>Thank you for viewing my portfolio! Feel free to reach out!</p>
+            </div>
+
+            <div class="footer"></div>
+        </body>
+    </html>
