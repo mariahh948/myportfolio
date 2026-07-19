@@ -36,43 +36,45 @@
                 background-color: antiquewhite;
                 color: #1f1f1f;
             }
-            .clouds {
-                position: relative;
+            /*.clouds {
+                flex: 1
+                /*position: relative;
                 width: 500px;
                 height: 500px;
+            }*/
+
+            div.clouds {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
             }
 
-            .cloud1 {
-                position: absolute;
-                left: 15px;
-                top: 0px;
+            div.cloud {
+                margin: 2px;
+                width: calc(25% - 20px);
             }
 
-            .cloud2 {
-                position: absolute;
-                left: 365px;
-                top: 0px;
+            .cloud {
+                flex: 1 1 350px;
             }
 
-            .cloud3 {
-                position: absolute;
-                left: 365px;
-                top: 300px;
+            .cloud img {
+                height: auto;
+                width: 100%;
+                display: block;
             }
 
-            .cloud4 {
-                position: absolute;
-                left: 0px;
-                top: 300px;
+            @media only screen and (max-width:768px) {
+                div.cloud {
+                    width: calc(50% - 20px);
+                }
             }
 
-            .cloud1decor {
-                position: absolute;
-                inset: 0;
-                align-items: center;
-                font-size: 16px;
-                font-weight: bold;
-                top: 95px;
+            @media only screen and (max-width: 480px) {
+                div.cloud {
+                    width: calc(100% - 20px);
+                }
             }
 
             .footer {
@@ -97,22 +99,28 @@
         </div>
 
         <div class="clouds"> 
-            <div class="cloud1">
-                <i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
+            <!--<div class="cloud1">-->
+            <div class="cloud">
+                <!--<i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
                 <div class="cloud1decor">
                     <h3>Programming Languages</h3>
                     <hr>
-                </div>
+                </div>-->
+                <img src="images/prog langs.png" alt="Programming Languages">
             </div>
-            <div class="cloud2">
+            <!--<div class="cloud2">-->
+            <div class="cloud">
+                <!--<i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>-->
+                <img src="images/tech.png" alt="Technologies">
+            </div>
+            <!--<div class="cloud3">-->
+            <div class="cloud">
+                <!--<i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>-->
+                <img src="images/tools.png" alt="Tools">
+            </div>
+            <!--<div class="cloud4">
                 <i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
-            </div>
-            <div class="cloud3">
-                <i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
-            </div>
-            <div class="cloud4">
-                <i class="material-icons" style="font-size:320px;color:lightblue;">cloud</i>
-            </div>
+            </div>-->
         </div>
 
         <div class="footer"></div>
