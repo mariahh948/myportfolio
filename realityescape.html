@@ -36,12 +36,24 @@
                 text-align: center;
                 margin: 2;
             }
-            .v { 
+            /* .v { 
                 text-align: center;
                 outline-style: dashed;
                 outline-width: thick;
                 color:coral;
                 padding: 4px;
+            } */
+
+            .videoFrame {
+                border-top: 10px solid coral;
+                border-bottom: 10px solid coral;
+                width: fit-content;
+                margin: 0 auto;
+            }
+
+            .videoFrame video {
+                display: block;
+                max-width: 100%;
             }
 
             h4 {
@@ -94,7 +106,7 @@
             <h4>A fully interactive VR escape room built in Unity where players collect items, solve puzzles, and navigate immersive environments using hand-tracked VR interaction.</h4>
         </div>
 
-        <div class="v">
+        <div class="videoFrame">
             <video width="auto" height="auto" controls>
                 <source src="videos/RealityEscape.mov" type="video/quicktime">
             </video>

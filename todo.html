@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>PortWeb</title>
+        <title>To-Do List</title>
         <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,17 +37,9 @@
                 text-align: center;
             }
 
-            /* .v {
-                text-align: center;
-                outline-style: inset;
-                outline-color:gray;
-                outline-width: thick;
-                padding: 10px;
-            } */
-
             .videoFrame {
-                border-top: 10px solid gray;
-                border-bottom: 10px solid black;
+                border-top: 10px solid rgb(255, 203, 237);
+                border-bottom: 10px solid rgb(255, 203, 237);
                 width: fit-content;
                 margin: 0 auto;
             }
@@ -55,6 +47,11 @@
             .videoFrame video {
                 display: block;
                 max-width: 100%;
+            }
+
+            h1 {
+                color: #e47fe9;
+                text-shadow: #1f1f1f;
             }
 
             h4 {
@@ -78,36 +75,38 @@
                 text-align: center;
                 margin-top: auto;
             }
-        </style> 
-    </head>
+        </style>
 
+    </head>
     <body>
         <div class="topnav">
             <a href="projects.html"><-- Back</a>
         </div>
 
          <div class="heading">
-            <h1>Portfolio Website</h1>
-            <h4>Custom-built portfolio website featuring responsive design, project navigation, and interactive UI elements.</h4>
+            <h1>To-Do List</h1>
+            <h4>A simple, responsive to-do list app with task persistence, built using HTML, CSS, and JavaScript.</h4>
         </div>
 
         <div class="videoFrame">
             <video width="800" height="460" controls>
-                <source src="videos/mylesvid.mov" type="video/quicktime">
+                <source src="videos/listapp.mov" type="video/quicktime">
             </video>
         </div>
 
         <div class="role">
             <h3>Role: Frontend Developer</h3>
-            <p class="description">Designed and developed the entire website independently, including layout design, navigation structure, responsive styling, and deployment.</p>
+            <p class="description">Designed and developed a to-do list application by following a guided tutorial, then customized the layout, styling, and structure.</p>
         </div>
 
         <div class="features">
             <h3>Features</h3>
             <p class="description">
             <ul>
+                <li>Add, edit, and delete tasks</li>
+                <li>Mark tasks as complete/incomplete</li>
+                <li>Tasks persist between session</li>
                 <li>Responsive UI</li>
-                <li>Project showcase</li>
                 <li>Navigation</li>
             </ul>
             </p>
@@ -116,13 +115,16 @@
         <div class="learned">
             <h3>What I learned:</h3>
             <p class="description">
-                Improved frontend development skills.
+                Learned how to use browser storage (localStorage) to persist data between sessions.
+            </p>
+            <p class="description">
+                Improved my understanding of DOM manipulation and event-driven JavaScript.
             </p>
             <p class="description">
                 Learned responsive web development principles.
             </p>
             <p class="description">
-                Gained experience with GitHub pages.
+                Gained hands-on experience building and structuring a functional web app.
             </p>
         </div>
 
@@ -134,7 +136,6 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>GitHub</li>
-                <li>TextEdit via MacBook</li>
             </ul>
             </p>
         </div>
