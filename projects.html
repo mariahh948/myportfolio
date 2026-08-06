@@ -36,6 +36,19 @@
                 background-color: antiquewhite;
                 color: #1f1f1f;
             }
+
+            .projects {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                flex-wrap: wrap;
+                padding: 30px;
+            }
+
+            .project {
+                text-align: center;
+            }
+
             img {
                 border-radius: 50%;
                 padding: 5px;
@@ -67,28 +80,40 @@
             <a href="contact.html">Contact</a>
         </div>
 
-        <div class="escaperoom">
-            <h3>VR Escape Room</h3>
-            <a target="_blank" href="realityescape.html">
-                <img src="images/REThumbnail.jpg" alt="Reality Escape" width="200" height="200">
-            </a>
-            <!--<img src="REThumbnail.jpg" alt="Reality Escape" width="200" height="200">-->
-        </div>
+        <div class="projects">
+            <div class="project">
+                <h3>VR Escape Room</h3>
+                <a href="realityescape.html">
+                    <img src="images/REThumbnail.jpg" alt="Reality Escape" width="200" height="200">
+                </a>
+                <!--<img src="REThumbnail.jpg" alt="Reality Escape" width="200" height="200">-->
+            </div>
 
-        <div class="mylesweb">
-            <h3>Portfolio Website</h3>
-            <a target="_blank" href="mylesweb.html">
-                <img src="images/mylesportfolioweb.png" alt="Myles Site" width="200" height="200">
-            </a>
-        </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <a href="mylesweb.html">
+                    <img src="images/mylesportfolioweb.png" alt="Myles Site" width="200" height="200">
+                </a>
+            </div>
 
-        <div class="todolist">
-            <h3>To-Do List</h3>
-            <a target="_blank" href="todo.html">
-                <img src="images/todoThumbnailcopy.png" id="todothumb" class="thumb" alt="To Do List" width="200" height="200">
-            </a>
+            <div class="project">
+                <h3>To-Do List</h3>
+                <a href="todo.html">
+                    <img src="images/todoThumbnailcopy.png" id="todothumb" alt="To Do List" width="200" height="200">
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Calculator App</h3>
+                <a href="calapp.html">
+                    <img src="images/calthumbnail192.png" id="calapp" alt="Calculator" width="200" height="200">
+                </a>
+            </div>
         </div>
+        
 
         <div class="footer"></div>
     </body>
 </html>
+
+<!-- removes target="_blank" so that another it wont open another page; could've also used javascript's event.preventDefault -->
