@@ -1,134 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<title>Hello there!</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-        html, body {
-            height: 100%;
-        }
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        * {
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Developer Portfolio</title>
 
-        .topnav {
-            overflow: hidden;
-            background-color: #1f1f1f;
-        }
-        .topnav a {
-            float: left;
-            display: block;
-            color: antiquewhite;
-            text-align: center;
-            padding: 20px 22px;
-            text-decoration: none;
-        }
-
-        .topnav a:hover {
-            background-color: antiquewhite;
-            color: black;
-        }
-
-        .topnav a.active {
-            background-color: antiquewhite;
-        }
-
-        .content {
-            background-color: #2b2b2b;
-            padding: 10px;
-            text-align: center;
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 700px;
-            position: relative;
-        }
-        .hero-text {
-            position: absolute;
-
-            top: 45%;
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-            font-size: 30px;
-            color: black;
-        }
-
-        .footer {
-            background-color: #1f1f1f;
-            padding: 10px;
-            text-align: center;
-            color: antiquewhite;
-        }
-	</style>
-    </head>
-
-    <body>
-        <!--<canvas id="content" width="200" height="100" style="border:1px solid #d3d3d3;">
-            Your browser does not support the HTML canvas tag.
-        </canvas>-->
-        <div class="topnav">
-            <a href="#" class="acive">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
-        <div class="content">
-            <canvas id="contents" width="400" height="500"></canvas>
-            
-            <div class="hero-text">
-                <span id="typing"></span>
-            </div>
-
-        </div>
-
-        <div class="footer">
-            <p>Welcome to my portfolio.</p>
-        </div>
+        <link rel="stylesheet" href="style.css">
 
         <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
 
-        <script>
-            var typed = new Typed("#typing", {
-                strings: ["Hello there!", "I am Mariah Smith.", "Welcome to my portfolio!"],
-                typeSpeed: 75,
-                backSpeed: 40,
-                loop: true
-            });
-        </script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
 
-        <script>
-            var c = document.getElementById("contents");
-            var ctx = c.getContext("2d");
+        <div id="background">
+            <div class="stars"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+        </div>
 
-            var grd = ctx.createRadialGradient(c.width/2, c.height/2, 20, c.width/2, c.height/2, 300);
-            grd.addColorStop(0, "rgba(255,182,193,1)");
-            grd.addColorStop(1, "rgba(255,182,193,0)");
+         <div class="announcement">
+            <h1>Site Under Construction</h1>
+        </div>
 
-            ctx.fillStyle = grd;
-            ctx.fillRect(0, 0, c.width, c.height);
+        <div id="pageSeparator"></div>
 
-            //ctx.font = "30px Arial";
-            //ctx.textAlign = "center";
-            //ctx.textBaseline = "middle";
-            //ctx.strokeText("Hello There!", c.width/2, 230);
-        </script>
+        <div id="pageSeparator"></div>
 
+        <div id="pageSeparator"></div>
+
+        <div class="mainInfo">
+            <h1>Mariah Smith</h1>
+            <div class="heroText">
+                <h3>
+                    <span id="typing"></span>
+                </h3>
+            </div>
+            <p id="summary">
+                As a computer science graduate, I am an aspiring software developer who is enthusiastic about creating useful products and always improving my technical talents. I've worked on projects ranging from web applications to interactive virtual reality experiences, learning how to solve problems and create software from scratch. I like learning new technologies, comprehending how systems operate, and using code to turn concepts into workable solutions.
+            </p>
+        </div>
+
+        <div id="pageSeparator"></div>
+
+        <h3>Projects</h3>
+        <div class="projects">
+            <div id="realityEscape">
+                <h5>VR Escape Room</h5>
+                <a>
+                    <video src="videos/RealityEscape.mov" controls>
+                </a>
+                <p>
+                    A fully interactive VR escape room built in Unity where players collect items, solve puzzles, and navigate immersive environments using hand-tracked VR interaction.
+                </p>
+
+            </div>
+
+            <div id="webDesign">
+                <h5>Portfolio Website</h5>
+                <a>
+                    <video src="videos/mylesvid.mov" controls></video>
+                </a>
+                <p>
+                    Custom-built portfolio website featuring responsive design, project navigation, and interactive UI elements.
+                </p>
+
+            </div>
+
+            <div id="calculator">
+                <h5>Calc App</h5>
+                <a>
+                    <video src="videos/calapp.mov" controls></video>
+                </a>
+                <p>
+                    A simple, responsive calculator application that performs basic mathematical operations.
+                </p>
+            </div>
+
+            <div id="todo">
+                <h5>To Do List</h5>
+                <a>
+                    <video src="videos/listapp.mov" controls></video>
+                </a>
+                <p>
+                    A simple, responsive to-do list application that allows users to add, edit, and delete tasks.
+                </p>
+            </div>
+        </div>
+
+        <div id="pageSeparator"></div>
+
+        <h3>Tech Stack</h3>
+        <div class="techStack">
+            <h5>Languages</h5>
+                <ul>
+                    <li>C#</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h5>Frameworks</h5>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Meta</li>
+                    <li>Visual Studio Code</li>
+                    <li>Unity Game Engine</li>
+                </ul>
+                <h5>Operating Systems</h5>
+                <ul>
+                    <li>Microsoft Windows</li>
+                    <li>Apple macOS</li>
+                </ul>
+        </div>
+
+        <div id="pageSeparator"></div>
+
+        <h3>Let's Connect</h3>
+        <p>Feel free to reach out. I'm open to new opportunities and collaborations!</p>
+        <div class="contact">
+            <div id="socials">
+                 <a href="https://github.com/mariahh948">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="55" height="55" id="github">
+                </a>
+
+                <a href="https://www.linkedin.com/in/mariah-smith-a9414b2b5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" width="50" height="50" id="linked">
+                </a>
+
+                <a href="https://discord.com/users/1230870657362038868"></a>
+                    <img src="https://pngimg.com/uploads/discord/discord_PNG8.png" width="50" height="50" id="discord">
+                </a>
+
+                <a href="mailto:mariahgs9488@gmail.com">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" width="50" height="50" id="gmail">
+                </a>
+            </div>
+        </div>
+
+        <div id="pageSeparator"></div>
     </body>
 </html>
